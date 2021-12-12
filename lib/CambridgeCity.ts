@@ -21,7 +21,7 @@ export default class CambridgeCity {
     }
 
     /**
-     * Get waster collection information by UPRN
+     * Get waste collection information by UPRN
      * @param uprn Unique property reference number
      * @param numberOfCollections Limit the amount of collections returned. default: 12
      */
