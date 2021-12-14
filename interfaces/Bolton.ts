@@ -4,6 +4,8 @@ export declare module getAddressesByPostcode {
         street: string;
         town: string;
         postcode: string;
+        
+        /* Unique Property Reference Nunber */
         uprn: string;
     }
 }
