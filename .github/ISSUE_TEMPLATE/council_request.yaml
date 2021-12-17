@@ -1,5 +1,5 @@
 name: Council Request
-description: Request for a council to the repository
+description: Request for a council to be added to the repository
 labels: ['Class: enhancement']
 
 body:
