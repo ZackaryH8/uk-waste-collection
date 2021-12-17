@@ -1,6 +1,6 @@
 name: Council Request
 description: Request for a council to be added to the repository
-labels: ['Class: Council Request']
+labels: ['Council Request']
 
 body:
     - type: input
