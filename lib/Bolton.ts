@@ -17,8 +17,8 @@ export default class Bolton {
      * @returns An array of addresses
      */
     async getAddressesByPostcode(postcode: string): Promise<BC.getAddressesByPostcode.Address[]> {
-        const repsonse = await (await axios.post('https://www.bolton.gov.uk/next-bin-collection', new URLSearchParams({ postcode, addressLookup: 'Submit' }).toString(), axiosConfig)).data;
-        const addressesDOM = Array.from(cheerio.load(repsonse)('#uprn').children());
+        const response = await (await axios.post('https://www.bolton.gov.uk/next-bin-collection', new URLSearchParams({ postcode, addressLookup: 'Submit' }).toString(), axiosConfig)).data;
+        const addressesDOM = Array.from(cheerio.load(response)('#uprn').children());
         const addresses = [];
 
         for (let i = 1; i < addressesDOM.length; i++) {
