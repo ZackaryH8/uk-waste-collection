@@ -6,6 +6,7 @@ const axiosConfig: AxiosRequestConfig = {
         api_key: '5efbf806ca6641c0bb36f266956cfe8c'
     },
     params: {
+        /* This parameter is vital when requesting Huntingdon data */
         authority: 'HDC'
     }
 };

@@ -15,7 +15,7 @@ export default class SouthCambridgeDistrict {
      * @returns An array of addresses
      */
     async getAddressesByPostcode(postcode: string): Promise<SCDC.GetAddressesByPostcode.Address[]> {
-        axiosConfig.params.postCode = postcode;
+        axiosConfig.params.postcode = postcode;
 
         return await (
             await axios.get(`https://servicelayer3c.azure-api.net/wastecalendar/address/search/`, axiosConfig)
