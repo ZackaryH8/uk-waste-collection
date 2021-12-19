@@ -1,4 +1,4 @@
-export declare module getAddressesByPostcode {
+export declare module GetAddressesByPostcode {
     export interface Address {
         id: string;
         houseNumber: string;
@@ -8,7 +8,7 @@ export declare module getAddressesByPostcode {
     }
 }
 
-export declare module getCollectionsByUPRN {
+export declare module GetCollectionsByUPRN {
     export interface Collection {
         date: Date;
         roundTypes: string[];
