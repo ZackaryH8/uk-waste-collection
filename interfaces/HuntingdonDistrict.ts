@@ -1,19 +1,33 @@
-export declare module getAddressesByPostcode {
-    interface Address {
-        summaryline: string;
-        buildingname?: any;
-        premise: string;
+export declare module GetAddressesByPostcode {
+    export interface Address {
+        id: string;
+        houseNumber: string;
         street: string;
-        posttown: string;
-        postcode: string;
-        uprn: string;
-        moreValues: boolean;
-        nextPage: number;
+        town: string;
+        postCode: string;
+    }
+}
+
+export declare module GetCollectionsByUPRN {
+    export interface Collection {
+        date: Date;
+        roundTypes: string[];
+        slippedCollection: boolean;
+    }
+
+    export interface Container {
+        type: string;
+        isAssisted: boolean;
+        capacity: number;
+        binSackTotal: number;
+        isBinStore: boolean;
     }
 
     export interface Root {
-        Response: number;
-        Success: boolean;
-        Addresses: Address[];
+        collections: Collection[];
+        roundTypes: string[];
+        isBinStore: boolean;
+        events: any[];
+        containers: Container[];
     }
 }
